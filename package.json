@@ -1,0 +1,35 @@
+{
+  "name": "kite-agent-telemetry-indexer",
+  "version": "1.0.0",
+  "description": "High-Throughput Autonomous AI Agent Telemetry Indexer & x402 Micropayment Event Streamer on Kite Chain",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "keywords": [
+    "typescript",
+    "web3",
+    "indexer",
+    "ai-agents",
+    "kite-blockchain",
+    "x402",
+    "telemetry",
+    "viem"
+  ],
+  "author": "untruebattl",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "viem": "^2.23.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
