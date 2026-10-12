@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Cyber Grid Lines -->
+  <g stroke="#334155" stroke-width="0.5" stroke-opacity="0.3">
+    <line x1="0" y1="50" x2="1200" y2="50"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="550" y1="0" x2="550" y2="400"/>
+    <line x1="700" y1="0" x2="700" y2="400"/>
+    <line x1="850" y1="0" x2="850" y2="400"/>
+    <line x1="1000" y1="0" x2="1000" y2="400"/>
+    <line x1="1150" y1="0" x2="1150" y2="400"/>
+  </g>
+
+  <!-- Glowing Accent Circles -->
+  <circle cx="150" cy="80" r="180" fill="#06b6d4" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="1050" cy="320" r="160" fill="#6366f1" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Header Badge -->
+  <rect x="70" y="65" width="230" height="30" rx="15" fill="#083344" stroke="#06b6d4" stroke-width="1.2"/>
+  <circle cx="90" cy="80" r="4" fill="#06b6d4" filter="url(#glow)"/>
+  <text x="105" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#22d3ee" letter-spacing="1">KITE BLOCKCHAIN EIP-155:2368</text>
+
+  <!-- Main Title -->
+  <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-1">Kite Agent Telemetry Indexer</text>
+  <text x="70" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#94a3b8">Autonomous AI Agent Telemetry Streamer &amp; x402 Micropayment Engine</text>
+
+  <!-- Feature Cards Container -->
+  <g transform="translate(70, 225)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="320" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <circle cx="35" cy="35" r="16" fill="#0c4a6e" stroke="#0284c7" stroke-width="1"/>
+    <text x="35" y="40" font-family="monospace" font-size="14" fill="#38bdf8" text-anchor="middle" font-weight="bold">402</text>
+    <text x="65" y="38" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">HTTP 402 Protocol</text>
+    <text x="20" y="75" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Real-time payment-required parsing &amp; EIP-3009 transfer authorizations</text>
+
+    <!-- Card 2 -->
+    <rect x="350" y="0" width="320" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <circle cx="385" cy="35" r="16" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="385" y="40" font-family="monospace" font-size="14" fill="#34d399" text-anchor="middle" font-weight="bold">🛡</text>
+    <text x="415" y="38" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Zero-Deduction Invariant</text>
+    <text x="370" y="75" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Strict upstream 5xx fault protection ensuring 0 pieUSD deducted on failure</text>
+
+    <!-- Card 3 -->
+    <rect x="700" y="0" width="350" height="110" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <circle cx="735" cy="35" r="16" fill="#312e81" stroke="#4f46e5" stroke-width="1"/>
+    <text x="735" y="40" font-family="monospace" font-size="14" fill="#818cf8" text-anchor="middle" font-weight="bold">⚡</text>
+    <text x="765" y="38" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff">High-Throughput Viem</text>
+    <text x="720" y="75" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Low-latency event streaming &amp; block telemetry monitoring</text>
+  </g>
+</svg>
